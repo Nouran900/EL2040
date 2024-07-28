@@ -19,7 +19,7 @@ int main()
      std::cout<<"enter the number you want to search for inside the list:";
      std::cin>>number;
       std::cout<<std::endl;
-    int found=search(arr, sizeof(arr),number);
+    int found=search(arr, sizeof(arr)/sizeof(arr[0]),number);
     if (found==false)
     std::cout<<"the  number isn't in the array " <<std::endl;
     else
